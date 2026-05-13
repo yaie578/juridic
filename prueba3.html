@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Elescano Soto Abogados | Firma Legal</title>
+
+    <!-- ── EXTERNAL LIBRARIES ── -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Prata&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ── ESTILOS PROPIOS ── -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SCROLL PROGRESS -->
+    <div id="scroll-progress"></div>
+
+    <!-- NAV BACKDROP (móvil) -->
+    <div id="nav-backdrop"></div>
+
+    <!-- GOLD PARTICLES -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- BACK TO TOP -->
+    <button id="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="form-toast"></div>
+
+
+
+    <!-- ══════════════════════════════════════════
+         NAVBAR
+    ══════════════════════════════════════════ -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="logo-container" href="#">
+                <img src="logotrans.png" alt="Logo Elescano Soto" class="logo-img">
+            </a>
+            <button class="navbar-toggler border-0" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#inicio"    data-section="inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros"  data-section="nosotros">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#areas"     data-section="areas">Áreas de Práctica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#staff"     data-section="staff">Staff</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#elegirnos" data-section="elegirnos">Diferenciales</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"
+                           data-bs-toggle="modal" data-bs-target="#contactModal"
+                           style="color: var(--accent-gold);">
+                            <i class="fas fa-calendar-check me-1" style="font-size:0.8rem;"></i>Consulta
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-premium ms-lg-3" href="https://wa.me/51948251204">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════════
+         HERO CARRUSEL
+    ══════════════════════════════════════════ -->
+    <section id="inicio">
+        <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active"
+                     style="background-image: url('photo-1589829545856-d10d557cf95f.jpg');">
+                    <div class="carousel-overlay">
+                        <div class="container text-center" data-aos="zoom-in">
+                            <h5 class="text-uppercase mb-4"
+                                style="letter-spacing:5px; color:var(--accent-gold);">
+                                Estudio Jurídico Peruano
+                            </h5>
+                            <h1 class="display-4 fw-bold mb-4 glitch-title"
+                                data-text="Defendemos sus derechos con experiencia, estrategia y compromiso">
+                                Defendemos sus derechos con experiencia, estrategia y compromiso
+                            </h1>
+                            <div class="gold-line"></div>
+                            <p class="lead mb-5 opacity-75 mx-auto" style="max-width:850px;">
+                                Especializados en brindar soluciones legales eficientes, estratégicas y
+                                personalizadas en el sector público y privado.
+                            </p>
+                            <a href="#areas" class="btn-premium">Nuestras Especialidades</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item"
+                     style="background-image: url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070');">
+                    <div class="carousel-overlay">
+                        <div class="container text-center">
+                            <h5 class="text-uppercase mb-4"
+                                style="letter-spacing:5px; color:var(--accent-gold);">
+                                Excelencia Jurídica
+                            </h5>
+                            <h2 class="display-4 fw-bold mb-4">Más de 10 años de resultados sólidos</h2>
+                            <div class="gold-line"></div>
+                            <p class="lead mb-5 opacity-75 mx-auto" style="max-width:850px;">
+                                Un enfoque profesional basado en la ética, la transparencia y el conocimiento
+                                integral del sistema legal peruano.
+                            </p>
+                            <a href="#nosotros" class="btn-premium">Conozca al Equipo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item"
+                     style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070');">
+                    <div class="carousel-overlay">
+                        <div class="container text-center">
+                            <h5 class="text-uppercase mb-4"
+                                style="letter-spacing:5px; color:var(--accent-gold);">
+                                Asesoría Corporativa
+                            </h5>
+                            <h2 class="display-4 fw-bold mb-4">Soporte legal para el crecimiento de su empresa</h2>
+                            <div class="gold-line"></div>
+                            <p class="lead mb-5 opacity-75 mx-auto" style="max-width:850px;">
+                                Minimizamos riesgos legales para que usted pueda enfocarse en lo que realmente
+                                importa: el éxito de su negocio.
+                            </p>
+                            <a href="#" class="btn-premium"
+                               data-bs-toggle="modal" data-bs-target="#contactModal">
+                                Agendar Consultoría
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.carousel-inner -->
+
+            <button class="carousel-control-prev" type="button"
+                    data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon opacity-50"></span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                    data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon opacity-50"></span>
+            </button>
+        </div>
+
+
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         TICKER BAR
+    ══════════════════════════════════════════ -->
+    <div id="ticker-bar">
+        <div class="ticker-track" id="tickerTrack">
+            <span class="ticker-item">Derecho Civil <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Derecho Penal <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Derecho Laboral <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Derecho Corporativo <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Contrataciones del Estado <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Derecho de Familia <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Arbitrajes <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Derecho Administrativo <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Asesoría Empresarial <span class="ticker-sep">·</span></span>
+            <!-- duplicado para loop continuo -->
+            <span class="ticker-item">Derecho Civil <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Derecho Penal <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Derecho Laboral <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Derecho Corporativo <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Contrataciones del Estado <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Derecho de Familia <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Arbitrajes <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Derecho Administrativo <span class="ticker-sep">·</span></span>
+            <span class="ticker-item">Asesoría Empresarial <span class="ticker-sep">·</span></span>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         STATS STRIP
+    ══════════════════════════════════════════ -->
+    <div id="stats-strip" data-aos="fade-up">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center gap-5 flex-wrap">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-label">Años de Experiencia</span>
+                </div>
+                <div class="stat-divider d-none d-md-block"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Casos Resueltos</span>
+                </div>
+                <div class="stat-divider d-none d-md-block"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="9">0</span>
+                    <span class="stat-label">Áreas de Práctica</span>
+                </div>
+                <div class="stat-divider d-none d-md-block"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">Clientes Satisfechos</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- ══════════════════════════════════════════
+         QUIÉNES SOMOS
+    ══════════════════════════════════════════ -->
+    <section id="nosotros" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h6 class="text-uppercase" style="color:var(--accent-gold); letter-spacing:3px;">Trayectoria</h6>
+                    <h2 class="mb-4">Quiénes Somos</h2>
+                    <p>Somos un estudio jurídico peruano comprometido con la defensa de los derechos e intereses
+                        de nuestros clientes, brindando asesoría y representación legal con altos estándares de
+                        calidad profesional. Nuestra experiencia en distintas ramas del derecho nos permite ofrecer
+                        soluciones jurídicas integrales, preventivas y estratégicas, adaptadas a las necesidades de
+                        cada caso. Nos caracterizamos por el trato personalizado, la confidencialidad y la búsqueda
+                        permanente de resultados favorables.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="p-4 bg-soft border-start border-gold">
+                                <h4 class="h5" style="color:var(--accent-gold);">Nuestra Misión</h4>
+                                <p class="small opacity-75 mb-0">Brindar servicios legales integrales con
+                                    profesionalismo, ética y compromiso, ofreciendo soluciones jurídicas eficientes
+                                    que protejan los intereses de nuestros clientes.</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-4 bg-soft border-start border-gold">
+                                <h4 class="h5" style="color:var(--accent-gold);">Nuestra Visión</h4>
+                                <p class="small opacity-75 mb-0">Ser un estudio jurídico reconocido en el Perú por
+                                    su excelencia profesional, liderazgo y resultados, consolidándonos como una
+                                    firma legal de referencia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         RECONOCIMIENTOS / COMPROMISOS
+    ══════════════════════════════════════════ -->
+    <section id="reconocimientos-section" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase"
+                    style="color:var(--accent-gold); letter-spacing:3px; font-size:0.75rem;">
+                    Estándares de Calidad
+                </h6>
+                <h2>Nuestros Compromisos</h2>
+                <div class="gold-line"></div>
+            </div>
+            <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-shield-halved"></i></div>
+                        <p class="award-label">Confidencialidad</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-scale-balanced"></i></div>
+                        <p class="award-label">Ética Profesional</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-medal"></i></div>
+                        <p class="award-label">Excelencia Jurídica</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-clock"></i></div>
+                        <p class="award-label">Respuesta Ágil</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-handshake"></i></div>
+                        <p class="award-label">Compromiso Total</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-chart-line"></i></div>
+                        <p class="award-label">Resultados Reales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ══════════════════════════════════════════
+         ÁREAS DE PRÁCTICA
+    ══════════════════════════════════════════ -->
+    <section id="areas" class="section-padding bg-soft">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5">Áreas de Práctica</h2>
+                <div class="gold-line"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="practice-card">
+                        <i class="fas fa-balance-scale"></i>
+                        <h4>Derecho Civil</h4>
+                        <p class="small opacity-75">Asesoría en temas patrimoniales, contratos, obligaciones,
+                            indemnizaciones, propiedad y sucesiones.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="practice-card">
+                        <i class="fas fa-gavel"></i>
+                        <h4>Derecho Penal</h4>
+                        <p class="small opacity-75">Patrocinio legal estratégico en defensa y representación de
+                            la parte agraviada en procesos penales.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="practice-card">
+                        <i class="fas fa-users-cog"></i>
+                        <h4>Derecho Laboral</h4>
+                        <p class="small opacity-75">Asesoría en conflictos laborales, despidos, beneficios
+                            sociales y procedimientos administrativos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="practice-card">
+                        <i class="fas fa-university"></i>
+                        <h4>Derecho Administrativo</h4>
+                        <p class="small opacity-75">Representación frente a entidades públicas, sanciones,
+                            licencias y trámites ante el Estado.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="practice-card">
+                        <i class="fas fa-city"></i>
+                        <h4>Derecho Corporativo</h4>
+                        <p class="small opacity-75">Constitución de sociedades, contratos comerciales,
+                            cumplimiento normativo y desarrollo empresarial.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="practice-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Derecho de Familia</h4>
+                        <p class="small opacity-75">Divorcios, alimentos, tenencia, régimen de visitas y
+                            protección familiar integral.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="practice-card">
+                        <i class="fas fa-file-contract"></i>
+                        <h4>Contrataciones del Estado</h4>
+                        <p class="small opacity-75">Asesoría en procesos de contratación pública, ejecución
+                            contractual y apelaciones ante el OSCE.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="practice-card">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Judiciales y Arbitrales</h4>
+                        <p class="small opacity-75">Patrocinio en procesos judiciales y arbitrajes con
+                            estrategias sólidas y resultados favorables.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="practice-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>Asesoría Empresarial</h4>
+                        <p class="small opacity-75">Soporte legal preventivo para la correcta toma de decisiones
+                            y minimización de riesgos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         EXPERTISE TABS
+    ══════════════════════════════════════════ -->
+    <section id="expertise-section" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase"
+                    style="color:var(--accent-gold); letter-spacing:3px; font-size:0.75rem;">
+                    Capacidades Técnicas
+                </h6>
+                <h2 class="display-5">Nuestra Especialización</h2>
+                <div class="gold-line"></div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="expertise-tabs" id="expertiseTabs">
+                <button class="expertise-tab active" data-tab="sector-publico">Sector Público</button>
+                <button class="expertise-tab" data-tab="sector-privado">Sector Privado</button>
+                <button class="expertise-tab" data-tab="litigacion">Litigación</button>
+                <button class="expertise-tab" data-tab="consultoria">Consultoría</button>
+            </div>
+
+            <!-- Pane: Sector Público -->
+            <div id="sector-publico" class="expertise-pane active">
+                <div class="expertise-grid">
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-landmark"></i></div>
+                        <div class="expertise-text">
+                            <h6>Contrataciones Estatales</h6>
+                            <p>Asesoría en procesos de licitación, contratos con el Estado y recursos ante OSCE.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="expertise-text">
+                            <h6>Procedimientos Administrativos</h6>
+                            <p>Recursos de apelación, reconsideración y representación ante entidades públicas.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="expertise-text">
+                            <h6>Defensa en Procesos Disciplinarios</h6>
+                            <p>Representación de funcionarios y servidores en procedimientos sancionadores.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="expertise-text">
+                            <h6>Gestión Pública</h6>
+                            <p>Asesoría en cumplimiento normativo, SERVIR, SUNAT y régimen laboral público.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pane: Sector Privado -->
+            <div id="sector-privado" class="expertise-pane">
+                <div class="expertise-grid">
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-building"></i></div>
+                        <div class="expertise-text">
+                            <h6>Constitución de Empresas</h6>
+                            <p>Creación de SAC, SA, SRL y otras formas societarias ante SUNARP y SUNAT.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-file-signature"></i></div>
+                        <div class="expertise-text">
+                            <h6>Contratos Comerciales</h6>
+                            <p>Redacción y revisión de contratos de compraventa, franquicia, licencia y joint ventures.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-people-carry"></i></div>
+                        <div class="expertise-text">
+                            <h6>Due Diligence</h6>
+                            <p>Análisis legal exhaustivo previo a fusiones, adquisiciones e inversiones empresariales.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-chart-bar"></i></div>
+                        <div class="expertise-text">
+                            <h6>Compliance Corporativo</h6>
+                            <p>Implementación de programas de cumplimiento normativo y gestión de riesgos legales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pane: Litigación -->
+            <div id="litigacion" class="expertise-pane">
+                <div class="expertise-grid">
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-gavel"></i></div>
+                        <div class="expertise-text">
+                            <h6>Litigación Civil</h6>
+                            <p>Patrocinio en procesos civiles ordinarios, ejecutivos, sumarísimos y no contenciosos.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-balance-scale-right"></i></div>
+                        <div class="expertise-text">
+                            <h6>Arbitrajes</h6>
+                            <p>Representación en arbitrajes institucionales y ad hoc, nacionales e internacionales.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-search"></i></div>
+                        <div class="expertise-text">
+                            <h6>Procesos Constitucionales</h6>
+                            <p>Hábeas corpus, amparo, cumplimiento y acciones populares.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-user-shield"></i></div>
+                        <div class="expertise-text">
+                            <h6>Defensa Penal</h6>
+                            <p>Estrategia de defensa en investigación preparatoria, juicio oral y recursos de apelación.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pane: Consultoría -->
+            <div id="consultoria" class="expertise-pane">
+                <div class="expertise-grid">
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-lightbulb"></i></div>
+                        <div class="expertise-text">
+                            <h6>Asesoría Preventiva</h6>
+                            <p>Identificación y mitigación de riesgos legales antes de que se conviertan en litigios.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-comments"></i></div>
+                        <div class="expertise-text">
+                            <h6>Conciliación Extrajudicial</h6>
+                            <p>Resolución eficiente de conflictos mediante acuerdos negociados sin ir a juicio.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="expertise-text">
+                            <h6>Capacitación Legal</h6>
+                            <p>Talleres y charlas para empresas sobre cumplimiento normativo y buenas prácticas.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-icon"><i class="fas fa-headset"></i></div>
+                        <div class="expertise-text">
+                            <h6>Retainer Legal</h6>
+                            <p>Servicios de asesoría continua con disponibilidad permanente para empresas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ══════════════════════════════════════════
+         STAFF
+    ══════════════════════════════════════════ -->
+    <section id="staff" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5">Nuestro Staff</h2>
+                <div class="gold-line"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="fade-up">
+                    <div class="staff-card">
+                        <div class="staff-img-container">
+                            <img src="WhatsApp Image 2026-05-08 at 1.38.09 PM.jpeg" class="staff-img" alt="Dr. Jorge Elescano Soto">
+                        </div>
+                        <div class="staff-info">
+                            <h3 class="staff-name">Dr. Jorge Elescano Soto</h3>
+                            <span class="staff-role">Fundador</span>
+                            <p class="staff-desc">Especialista en litigación compleja y asesoría corporativa de alto impacto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="staff-card">
+                        <div class="staff-img-container">
+                            <img src="WhatsApp Image 2026-05-08 at 1.38.28 PM (1).jpeg" class="staff-img" alt="Dra. Lucía Castro">
+                        </div>
+                        <div class="staff-info">
+                            <h3 class="staff-name">Dra. Lucía Castro</h3>
+                            <span class="staff-role">Derecho de Familia</span>
+                            <p class="staff-desc">Comprometida con la protección legal integral y el bienestar familiar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="staff-card">
+                        <div class="staff-img-container">
+                            <img src="WhatsApp Image 2026-05-08 at 1.38.28 PM (2).jpeg" class="staff-img" alt="Dr. Ricardo Solano">
+                        </div>
+                        <div class="staff-info">
+                            <h3 class="staff-name">Dr. Ricardo Solano</h3>
+                            <span class="staff-role">Derecho Civil</span>
+                            <p class="staff-desc">Experto en resolución de conflictos patrimoniales y contratos civiles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="staff-card">
+                        <div class="staff-img-container">
+                            <img src="WhatsApp Image 2026-05-08 at 1.38.28 PM (3).jpeg" class="staff-img" alt="Abog. Elena Vargas">
+                        </div>
+                        <div class="staff-info">
+                            <h3 class="staff-name">Abog. Elena Vargas</h3>
+                            <span class="staff-role">Derecho Laboral</span>
+                            <p class="staff-desc">Defensa técnica especializada en beneficios sociales y relaciones laborales.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="staff-card">
+                        <div class="staff-img-container">
+                            <img src="WhatsApp Image 2026-05-08 at 1.38.28 PM.jpeg" class="staff-img" alt="Dr. Juan Elescano">
+                        </div>
+                        <div class="staff-info">
+                            <h3 class="staff-name">Dr. Juan Elescano</h3>
+                            <span class="staff-role">Gestión Pública</span>
+                            <p class="staff-desc">Consultor senior en derecho administrativo y contrataciones estatales.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         TIMELINE
+    ══════════════════════════════════════════ -->
+    <section id="timeline-section" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase"
+                    style="color:var(--accent-gold); letter-spacing:3px; font-size:0.75rem;">Historia</h6>
+                <h2 class="display-5">Nuestra Trayectoria</h2>
+                <div class="gold-line"></div>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <p class="timeline-year">2014</p>
+                        <h4 class="timeline-title">Fundación del Estudio</h4>
+                        <p class="timeline-desc">El Dr. Jorge Elescano Soto funda el estudio con enfoque en
+                            litigación civil y administrativa en Lima.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <p class="timeline-year">2016</p>
+                        <h4 class="timeline-title">Expansión a Derecho Corporativo</h4>
+                        <p class="timeline-desc">Incorporación de la práctica corporativa y asesoría a empresas
+                            del sector construcción y servicios.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <p class="timeline-year">2019</p>
+                        <h4 class="timeline-title">Equipo Multidisciplinario</h4>
+                        <p class="timeline-desc">Consolidación del equipo con especialistas en derecho laboral,
+                            familia y contrataciones del Estado.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <p class="timeline-year">2022</p>
+                        <h4 class="timeline-title">100+ Casos Arbitrales</h4>
+                        <p class="timeline-desc">Superamos los 100 arbitrajes resueltos exitosamente,
+                            consolidando nuestra posición en litigación compleja.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <p class="timeline-year">2024 — Hoy</p>
+                        <h4 class="timeline-title">Firma de Referencia en Lima</h4>
+                        <p class="timeline-desc">Reconocidos como firma de referencia en el sector público y
+                            privado, con más de 500 casos resueltos.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         TESTIMONIOS
+    ══════════════════════════════════════════ -->
+    <section id="testimonios" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5">Lo Que Dicen Nuestros Clientes</h2>
+                <div class="gold-line"></div>
+            </div>
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">El Dr. Elescano llevó mi caso laboral con total
+                            profesionalismo. En todo momento me mantuvieron informado y logramos un resultado
+                            muy favorable. Totalmente recomendados.</p>
+                        <span class="testimonial-author">Carlos M.</span>
+                        <span class="testimonial-role">CLIENTE · DERECHO LABORAL</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">Excelente atención y estrategia legal en mi proceso de
+                            familia. Me sentí respaldada en cada etapa. Un equipo humano y altamente
+                            capacitado.</p>
+                        <span class="testimonial-author">María R.</span>
+                        <span class="testimonial-role">CLIENTA · DERECHO DE FAMILIA</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">Nos apoyaron en la constitución de nuestra empresa y en
+                            contratos comerciales clave. Servicio rápido, serio y muy bien orientado al cliente
+                            empresarial.</p>
+                        <span class="testimonial-author">Empresa GrupoTec S.A.C.</span>
+                        <span class="testimonial-role">CLIENTE · DERECHO CORPORATIVO</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         PROCESO / METODOLOGÍA
+    ══════════════════════════════════════════ -->
+    <section id="proceso-section" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase"
+                    style="color:var(--accent-gold); letter-spacing:3px; font-size:0.75rem;">Metodología</h6>
+                <h2 class="display-5">Cómo Trabajamos</h2>
+                <div class="gold-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <div class="proceso-step open" id="step1">
+                        <div class="proceso-header" onclick="toggleStep('step1')">
+                            <span class="proceso-num">01</span>
+                            <h5 class="proceso-title">Consulta Inicial y Diagnóstico</h5>
+                            <i class="fas fa-chevron-down proceso-arrow"></i>
+                        </div>
+                        <div class="proceso-body">
+                            <p>Escuchamos detalladamente su caso en una consulta confidencial y realizamos un
+                                diagnóstico jurídico completo para determinar las mejores alternativas.</p>
+                            <ul>
+                                <li>Reunión presencial o virtual</li>
+                                <li>Análisis de documentación</li>
+                                <li>Evaluación de riesgos y viabilidad</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="proceso-step" id="step2">
+                        <div class="proceso-header" onclick="toggleStep('step2')">
+                            <span class="proceso-num">02</span>
+                            <h5 class="proceso-title">Diseño de Estrategia Legal</h5>
+                            <i class="fas fa-chevron-down proceso-arrow"></i>
+                        </div>
+                        <div class="proceso-body">
+                            <p>Elaboramos un plan jurídico personalizado orientado a proteger sus intereses y
+                                alcanzar los mejores resultados posibles.</p>
+                            <ul>
+                                <li>Estrategia procesal o extrajudicial</li>
+                                <li>Cronograma de actuaciones</li>
+                                <li>Estimación de plazos y costos</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="proceso-step" id="step3">
+                        <div class="proceso-header" onclick="toggleStep('step3')">
+                            <span class="proceso-num">03</span>
+                            <h5 class="proceso-title">Ejecución y Seguimiento</h5>
+                            <i class="fas fa-chevron-down proceso-arrow"></i>
+                        </div>
+                        <div class="proceso-body">
+                            <p>Ejecutamos la estrategia con rigor técnico y le mantenemos informado en cada
+                                etapa con reportes periódicos.</p>
+                            <ul>
+                                <li>Presentación de escritos y recursos</li>
+                                <li>Representación en audiencias</li>
+                                <li>Reportes de avance constantes</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="proceso-step" id="step4">
+                        <div class="proceso-header" onclick="toggleStep('step4')">
+                            <span class="proceso-num">04</span>
+                            <h5 class="proceso-title">Resolución y Cierre</h5>
+                            <i class="fas fa-chevron-down proceso-arrow"></i>
+                        </div>
+                        <div class="proceso-body">
+                            <p>Gestionamos la resolución del caso y aseguramos la correcta ejecución del
+                                resultado, garantizando el cumplimiento efectivo.</p>
+                            <ul>
+                                <li>Ejecución de sentencias y acuerdos</li>
+                                <li>Informe final del caso</li>
+                                <li>Asesoría post-proceso si es necesario</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         CTA
+    ══════════════════════════════════════════ -->
+    <section id="cta-section" data-aos="zoom-in">
+        <div class="container" style="position:relative; z-index:1;">
+            <h6 class="text-uppercase mb-3"
+                style="color:var(--accent-gold); letter-spacing:4px;">¿Necesita Asesoría Legal?</h6>
+            <h2 class="mb-3">Contáctenos Hoy Mismo</h2>
+            <div class="gold-line"></div>
+            <p class="opacity-75 mb-5 mx-auto" style="max-width:580px;">
+                Nuestro equipo está listo para escucharle y ofrecer la mejor estrategia legal para su caso.
+                Confidencialidad garantizada.
+            </p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#" class="btn-premium"
+                   style="font-size:0.9rem; padding:14px 35px;"
+                   data-bs-toggle="modal" data-bs-target="#contactModal">
+                    <i class="fas fa-calendar-check me-2"></i> Agendar Consulta
+                </a>
+                <a href="https://wa.me/51948251204" class="btn-premium"
+                   style="font-size:0.9rem; padding:14px 35px; background:transparent;
+                          border:1px solid rgba(37,211,102,0.5); color:#25D366;">
+                    <i class="fab fa-whatsapp me-2"></i> WhatsApp Directo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         POR QUÉ ELEGIRNOS
+    ══════════════════════════════════════════ -->
+    <section id="elegirnos" class="section-padding bg-soft">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h2 class="display-6 mb-4">¿Por qué elegirnos?</h2>
+                    <div class="gold-line m-0 mb-4"></div>
+                    <p class="opacity-75">Contamos con profesionales calificados para brindar una defensa técnica
+                        de alto nivel basada en resultados y ética profesional.</p>
+                    <div class="mt-4">
+                        <h6 class="text-uppercase mb-3" style="color:var(--accent-gold);">Nuestros Valores</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge border border-gold p-2">Ética</span>
+                            <span class="badge border border-gold p-2">Compromiso</span>
+                            <span class="badge border border-gold p-2">Excelencia</span>
+                            <span class="badge border border-gold p-2">Confidencialidad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="d-flex gap-3 mb-4">
+                                <i class="fas fa-check-circle text-gold fs-5"></i>
+                                <div>
+                                    <h6 class="mb-1">Atención personalizada</h6>
+                                    <p class="small opacity-50">Soluciones adaptadas a cada necesidad específica.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 mb-4">
+                                <i class="fas fa-check-circle text-gold fs-5"></i>
+                                <div>
+                                    <h6 class="mb-1">Estrategias efectivas</h6>
+                                    <p class="small opacity-50">Diseños jurídicos orientados a obtener resultados.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex gap-3 mb-4">
+                                <i class="fas fa-check-circle text-gold fs-5"></i>
+                                <div>
+                                    <h6 class="mb-1">Experiencia comprobada</h6>
+                                    <p class="small opacity-50">Abogados con más de 10 años de trayectoria real.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 mb-4">
+                                <i class="fas fa-check-circle text-gold fs-5"></i>
+                                <div>
+                                    <h6 class="mb-1">Transparencia</h6>
+                                    <p class="small opacity-50">Comunicación clara, honesta y confidencial.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         UBICACIÓN
+    ══════════════════════════════════════════ -->
+    <section id="ubicacion-section">
+        <div class="ubicacion-inner">
+            <div class="ubicacion-info" data-aos="fade-right">
+                <h6 class="text-uppercase mb-3"
+                    style="color:var(--accent-gold); letter-spacing:3px; font-size:0.75rem;">Encuéntrenos</h6>
+                <h2 class="mb-4" style="font-family:'Cinzel',serif; font-size:1.6rem;">Nuestra Ubicación</h2>
+                <div class="gold-line m-0 mb-5"></div>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-info-text">
+                        <span>Dirección</span>
+                        <strong>Lima, Perú</strong>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                    <div class="contact-info-text">
+                        <span>Teléfono / WhatsApp</span>
+                        <strong><a href="tel:+51948251204">+51 948 251 204</a></strong>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-info-text">
+                        <span>Correo Electrónico</span>
+                        <strong><a href="mailto:contacto@elescano.pe">contacto@elescano.pe</a></strong>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+                    <div class="contact-info-text">
+                        <span>Horario de Atención</span>
+                        <strong>Lun – Vie: 9:00 am – 7:00 pm</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ubicacion-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249762.76118939644!2d-77.12778!3d-12.04318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e0!2sLima%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1620000000000"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         FOOTER
+    ══════════════════════════════════════════ -->
+    <footer class="text-center py-5">
+        <div class="container">
+            <div class="logo-container justify-content-center mb-4">
+                <img src="logotrans.png" alt="Logo Elescano Soto" class="logo-img">
+            </div>
+            <p class="small opacity-50 mb-4 mx-auto" style="max-width:500px;">
+                Especialistas en soluciones legales integrales con ética y excelencia jurídica en el Perú.
+            </p>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="#" class="text-white opacity-50"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white opacity-50"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/51948251204" class="text-white opacity-50"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <hr class="opacity-10">
+            <p class="small opacity-50 mb-0">
+                &copy; 2026 Elescano Soto Abogados. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ══════════════════════════════════════════
+         MODAL DE CONTACTO
+    ══════════════════════════════════════════ -->
+    <div class="modal fade" id="contactModal" tabindex="-1"
+         aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header px-4 py-3">
+                    <div>
+                        <h5 class="modal-title mb-0" id="contactModalLabel"
+                            style="font-family:'Cinzel',serif; color:var(--accent-gold);">
+                            Agendar Consulta
+                        </h5>
+                        <p class="small opacity-50 mb-0"
+                           style="font-size:0.75rem; letter-spacing:1px;">
+                            CONFIDENCIAL Y SIN COMPROMISO
+                        </p>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="modalNombre" placeholder="Su nombre">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Teléfono / WhatsApp</label>
+                            <input type="tel" class="form-control" id="modalTelefono" placeholder="+51 xxx xxx xxx">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="modalEmail" placeholder="correo@ejemplo.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Área Legal</label>
+                            <select class="form-select" id="modalArea">
+                                <option value="">Seleccione un área</option>
+                                <option>Derecho Civil</option>
+                                <option>Derecho Penal</option>
+                                <option>Derecho Laboral</option>
+                                <option>Derecho Administrativo</option>
+                                <option>Derecho Corporativo</option>
+                                <option>Derecho de Familia</option>
+                                <option>Contrataciones del Estado</option>
+                                <option>Arbitrajes</option>
+                                <option>Asesoría Empresarial</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Describa su Caso</label>
+                            <textarea class="form-control" id="modalMensaje" rows="4"
+                                      placeholder="Describa brevemente su situación legal..."></textarea>
+                        </div>
+                        <div class="col-12">
+                            <p class="small opacity-40 mb-0" style="font-size:0.72rem;">
+                                <i class="fas fa-lock me-1" style="color:var(--accent-gold);"></i>
+                                Su información es estrictamente confidencial y no será compartida con terceros.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer px-4 py-3 gap-2">
+                    <button type="button" class="btn btn-sm"
+                            style="border:1px solid rgba(255,255,255,0.1); color:rgba(255,255,255,0.5);
+                                   padding:10px 20px; font-size:0.8rem;"
+                            data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn-premium"
+                            style="padding:10px 28px; font-size:0.82rem;"
+                            onclick="submitModal()">
+                        <i class="fab fa-whatsapp me-2"></i>Enviar por WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── SCRIPTS ── -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Lógica propia: carga DESPUÉS de Bootstrap y AOS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
